@@ -1,4 +1,5 @@
 var mongoose = require("mongoose")
+
 var Schema = mongoose.Schema
 
 mongoose.connect('mongodb://localhost/applications');
@@ -21,7 +22,6 @@ var ApplicationSchema = new Schema ({
 })
 
 var Application = mongoose.model("Application", ApplicationSchema)
-
 
 
 module.exports = {
