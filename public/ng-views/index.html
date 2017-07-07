@@ -1,0 +1,9 @@
+<p>Index</p>
+<div ng-repeat="application in vm.applications">
+  <p><a data-ui-sref="show({companyName: application.companyName})">{{application.companyName}}</p>
+</div>
+
+<form ng-submit="vm.create()">
+  <input ng-model="vm.newApplication.companyName" type="text" placeholder="Company Name"/>
+  <button type="submit">Create</button>
+</form>
